@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0%;
+    font-family: cursive;
+}
+.header{
+    height: 120px;
+    width: 100%;
+    background-color: orange;
+}
+.header .navbar{
+    background-color: black;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .navbar .links{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.header .navbar .links li{
+    padding-left: 30px;
+    font-size: 25px;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+}
+.header .navbar .links li:hover{
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-underline-offset: 10px;
+}
+.banner{
+    height: 600px;
+    width: 100%;
+    background-color: yellow;
+    background-image: url("./image/bg.jpg");
+    background-position: left;
+    background-size: cover;
+}
+.banner .content{
+   color: white;
+   text-align: center;
+}
+.banner h1{
+    font-size: 70px;
+    text-shadow: 3px 3px 4px orange;
+    padding-top: 30px;
+}
+.banner h3{
+    padding-left: 700px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+.about{
+    height: 600px;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .subAbout{
+    height: 450px;
+    width: 75%;
+    background-color:black;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 0px 0px 40px 3px orange;    
+}
+.about .subAbout .image{
+    height: 450px;
+}
+.about .subAbout .content{
+    color: white;
+}
+.about .subAbout .content h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;  
+}
+.about .subAbout .content p{
+    font-size: 20px;
+    padding: 30px;
+    text-align: justify;
+    line-height: 35px;
+}
+.about .subAbout .content h2{
+    text-align: end;
+    padding-right: 30px; 
+}
+.services{
+    height: 600px;
+    width: 100%;
+    background-image: url("./image/service.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.services .card{
+    height: 400px;
+    width: 250px;
+    background-color: white;
+    
+}
+.services .card:hover{
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+.services .card p{
+    text-align: center;
+    padding-top: 20px;
+}
+.services .card button{
+    padding: 5px 34px;
+    font-size: 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    box-shadow: 0 0 3px 2px gray;
+}
+.ex{
+    text-align: center;
+    font-size: 40px;
+}
+.collection{
+    height: 640px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxparent{
+    height: 550px;
+    width: 93%;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;   
+}
+.boxparent .box{
+    height: 200px;
+    width: 250px;
+    border: 3px solid black; 
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px orange;
+}
+.box img:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+    filter:blur(3px);
+}
+.box h1{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+}
+.contact{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact .form{
+    height: 400px;
+    width: 500px;
+    background-color:white;
+    box-shadow: 0px 0px 20px orange,0px 0px 20px orange;
+    padding: 30px;
+}
+.contact .form input{
+    height: 40px;
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 30px;
+    border-bottom: 2px solid black;
+}
+.contact .form input:last-of-type{
+    height: 80px;
+}
+.contact .form button{
+    height: 40px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 17px;
+    background-color: orangered;
+}
+
+.contact .media{
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    position: relative;
+    box-shadow: 0px 0px 40px 4px orangered;
+    border-radius: 30px;
+}
+.contact .media i{
+    font-size: 80px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+.contact .media i:hover{
+    text-shadow: 0px 0px 30px orangered,0px 0px 30px orangered;
+}
+.contact .media:hover{
+    transform: scale(1.1) translateY(-30px);
+    transition: 1s;
+}
